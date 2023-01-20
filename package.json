@@ -1,0 +1,38 @@
+{
+  "name": "@hakkei/dfu-handler",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://github.com/hakkei-co/hke-dfu-handler#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakkei-co/hke-dfu-handler.git"
+  },
+  "keywords": [
+    "dfu",
+    "web",
+    "hakkei"
+  ],
+  "bugs": {
+    "url": "https://github.com/simonw/datasette-table/issues"
+  },
+  "authors": [
+    "Jonathan Lau <jonathan@hakkei.co>, (https://github.com/laujonat)",
+    "Raqueebuddin Aziz <raqueebuddin.aziz.314@gmail.com> (https://github.com/vanillacode314)"
+  ],
+  "dependencies": {
+    "fast-xml-parser": "^4.0.13"
+  }
+}
