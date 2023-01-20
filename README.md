@@ -6,6 +6,12 @@ $ pnpm install
 $ pnpm run dev
 ```
 
+## Installation
+
+```
+$ npm install --save @hakkei/dfu-handler
+```
+
 ## Markup
 
 ```html
