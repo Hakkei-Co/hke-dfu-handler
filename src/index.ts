@@ -99,9 +99,13 @@ class FileTree extends HTMLElement {
 
   async initTree () {
     const xml = await fetch(
-      'https://hakkei-artifacts.sfo3.digitaloceanspaces.com/&prefix=hakkei-development'
+      'https://hakkei-artifacts.sfo3.digitaloceanspaces.com'
     ).then(res => {
-      console.log('%c NOTICE ⏰ ', 'background:#6e6e6e; color: #cdfdce;, ⚛︎ FileTree ⚛︎ initTree ⚛︎ res', res);
+      console.log(
+        '%c NOTICE ⏰ ',
+        'background:#6e6e6e; color: #cdfdce;, ⚛︎ FileTree ⚛︎ initTree ⚛︎ res',
+        res
+      )
 
       return res.text()
     })
