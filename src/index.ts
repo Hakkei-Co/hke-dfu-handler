@@ -113,7 +113,7 @@ class FileTree extends HTMLElement {
     const paths = parser
       .parse(xml)
       ['ListBucketResult']['Contents'].filter(({ Key }: { Key: string }) =>
-        Boolean(Key)
+        Key.endsWith('zmk.signed.bin')
       )
       .map(({ Key }: { Key: string }) => Key.trim())
     const root = createTree(paths)
