@@ -99,8 +99,12 @@ class FileTree extends HTMLElement {
 
   async initTree () {
     const xml = await fetch(
-      'https://hakkei-artifacts.sfo3.digitaloceanspaces.com'
-    ).then(res => res.text())
+      'https://hakkei-artifacts.sfo3.digitaloceanspaces.com/&prefix=hakkei-development'
+    ).then(res => {
+      console.log('%c NOTICE ⏰ ', 'background:#6e6e6e; color: #cdfdce;, ⚛︎ FileTree ⚛︎ initTree ⚛︎ res', res);
+
+      return res.text()
+    })
     const parser = new XMLParser()
     const paths = parser
       .parse(xml)
@@ -113,4 +117,4 @@ class FileTree extends HTMLElement {
   }
 }
 
-customElements.define("dfu-handler", FileTree);
+customElements.define('dfu-handler', FileTree)
